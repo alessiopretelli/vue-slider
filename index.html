@@ -17,6 +17,8 @@
                 </div>
                 <div class="images">
                     <img :src="imgs[counterI]" alt="">
+                    <i @click='playI' v-if='player' class="far fa-pause-circle"></i>
+                    <i @click='playI' v-else class="far fa-play-circle"></i>
                 </div>
                 <div @click='slideup' class="next">
                     <i class="fas fa-angle-right"></i>
